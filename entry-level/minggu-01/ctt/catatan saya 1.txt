@@ -1,0 +1,60 @@
+=======sintax dasar=======
+echo => mencetak data bertipe tunggal
+print_r ()=> untuk mencetak array atau multiple data
+var_dump ()=> untuk mencetak tipe data.
+<= //isi yang ingin di tampilkan ?> => mencetak secara cepat.
+
+=====variabel tipe data dan value======
+variabel = penampung value atau nilai.
+type data = jenis dari data.
+type data:
+String => type data huru ("hello word")
+int => type data angka (1)
+flot => type data decimal (1.123)
+value => nilai dari jenis barang yang di masukan kedalam variabel.
+ex:
+$a    =  (int) 		123;
+|	   |		 |
+variabel  type data	value
+
+======constanta=======
+CONST => nilainya tetap dan tidak dapat di rubah untuk type data di tentukan secara otomatis.
+CONST => untuk menghemat memori karena nilai di lock.
+ex:
+CONST nama = value;
+
+======Fungsi=======
+DRY => dont repeat yours
+fungsi terdapat 2 jenis:
+1.Non Void -> return
+2.Void -> print-out -> echo, print_r,etc
+
+1.Non Void
+return -> mengembalikan nilai type data.
+:type data => untuk mengset nilai yang akan di kembalikan.
+
+ex:
+function getFungsiNama():string{
+    return "Salman Alfarissy";    
+}
+
+2.Void
+ex:
+function getFungsiNama2():void{
+    echo "Salman Alfarissy";    
+}
+$a =getFungsiNama2();
+$a;
+
+=====parameter====
+parameter -> penampung nilai yang akan di teruskan ke fungsi.
+
+
+
+
+
+
+
+
+
+
