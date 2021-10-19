@@ -1,0 +1,34 @@
+Gerbang Logika(tabel kebenaran)
+=> proses pengolahan input bilangan biner dengan teori matematika boolean.
+
+AND = and = &&
+OR = or = ||
+XOR = xor
+NOT = not = ! = !=
+
+AND => jika statement bernilai false maka true diabaikan
+OR => jika ada statement bernilai true maka false diabaikan
+----------------------------------------------------------------------
+OR :		
+true true = true
+fale true = true
+false false = false
+
+AND :
+true true = true
+false true = false
+false false = false
+
+------------------------------------------------------------------------
+XOR = jika semua pernyataan true maka akan bernilai false
+XOR :
+true true = false
+true false = true
+false false = false
+
+-------------------------------------------------------------------------
+jika sebuah variabel memiliki nilai maka akan dianggap true
+jika sebuah variabel tidak memiliki nilai maka akan dianggap false
+
+-------------------------------------------------------------------------
+
