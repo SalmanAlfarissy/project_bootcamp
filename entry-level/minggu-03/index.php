@@ -39,6 +39,7 @@ echo "========Hitung Persegi========";
 function hitungPersegi($type,$panjang,$lebar,$satuan):void{
     switch($type){
         case 'luas':    {
+            $satuan='cm"';
             echo "<br/>luas lingkaran adalah: ".$panjang*$lebar." ".$satuan;
             break;
         }
@@ -54,14 +55,21 @@ hitungPersegi($type,$panjang,$lebar,$satuan);
 
 echo "<br/>========Dana Pemerintah========";
 
-$kondisi="tidak hujan";
-function danaPemerintah($kondisi):string{
+$kondisi="hujan";
+$kondisi2="banjir";
+
+function danaPemerintah($kondisi,$kondisi2):string{
 if  ($kondisi=='hujan'){
-    $kondisi='banjir';
-    if ($kondisi=='banjir'){
+    
+    if ($kondisi2=='banjir'){
         $kondisi="penduduk mengungsi";
         if ($kondisi=="penduduk mengungsi"){
             $kondisi="Pemerintah perlu menyalurkan dana";
+        }
+    }else {
+        $kondisi="penduduk tidak mengungsi";
+        if ($kondisi=="penduduk tidak mengungsi"){
+            $kondisi="Pemerintah tidak perlu menyalurkan dana";
         }
     }
 }else {
@@ -69,4 +77,4 @@ if  ($kondisi=='hujan'){
 }
 return $kondisi;
 }
-echo "<br/>".danaPemerintah($kondisi);
+echo "<br/>".danaPemerintah($kondisi,$kondisi2);
