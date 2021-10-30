@@ -31,13 +31,12 @@ Kisi kisi
 
 <?php
 
-$panjang = 10;
-$lebar = 10;
-$satuan = 'cm';
-$type = 'luas';
+$panjang = 5;
+$lebar = 2;
+
 echo "========Hitung Persegi========";
 function hitungPersegi($type,$panjang,$lebar,$satuan):void{
-    switch($type){
+    switch(strtolower($type)){
         case 'luas':    {
             $satuan='cm"';
             echo "<br/>luas lingkaran adalah: ".$panjang*$lebar." ".$satuan;
@@ -47,11 +46,16 @@ function hitungPersegi($type,$panjang,$lebar,$satuan):void{
             echo "<br/>keliling lingkaran adalah: ". 2*($panjang+$lebar) ." ".$satuan;
             break;
         }
+        default:{
+            echo "anda salah type";
+            break;
+        }
+        
     }
 
 }
 
-hitungPersegi($type,$panjang,$lebar,$satuan);
+hitungPersegi("keliling",$panjang,$lebar,"cm");
 
 echo "<br/>========Dana Pemerintah========";
 
@@ -60,7 +64,6 @@ $kondisi2="banjir";
 
 function danaPemerintah($kondisi,$kondisi2):string{
 if  ($kondisi=='hujan'){
-    
     if ($kondisi2=='banjir'){
         $kondisi="penduduk mengungsi";
         if ($kondisi=="penduduk mengungsi"){
